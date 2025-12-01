@@ -595,31 +595,24 @@ body,
   line-height: 1.6 /* interlineado */
 }
 
-
-
-
-
-
-
-
-
 .profile-right .section-title { /* título derecha */
-  font-size: 44px; /* grande */
-  letter-spacing: -2px; /* juntas */
+  font-size: 100px; /* grande */
+  letter-spacing: -13px; /* juntas */
   margin: 0 0 18px; /* margen inf */
-  text-align: right /* derecha */
+  text-align: right; /* derecha */
+  font-weight: 900; /* gruesa tipo */
 }
 
 .profile-right .services { /* lista servicios */
   list-style: none; /* sin viñetas */
   padding: 0; /* sin padding */
   margin: 0; /* sin margen */
-  color: #F1F1F1; /* claro */
+  color: #F1F1F1; /* color */
   display: flex; /* flex */
   flex-direction: column; /* vertical */
-  gap: 8px; /* espacio */
+  gap: 10px; /* espacio */
   text-transform: uppercase; /* mayúsculas */
-  font-weight: 700; /* gruesa */
+  font-weight: 550; /* gruesa tipo */
   align-items: flex-end; /* derecha */
   text-align: right /* derecha */
 }
@@ -638,8 +631,10 @@ body,
 }
 
 .contact-left .section-title { /* título contacto */
-  font-size: 44px; /* grande */
-  margin: 0 0 12px /* margen info */
+  font-size: 100px; /* grande */
+  margin: 0 0 12px; /* margen info */
+  letter-spacing: -13px; /* juntas */
+  font-weight: 900; /* muy gruesa */
 }
 
 .contact-lead { /* texto contacto */
