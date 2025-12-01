@@ -1,659 +1,675 @@
+/* Estilos generales */
 .site-root {
-  background: #211E21;
-  color: #F1F1F1;
-  min-height: 100vh;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #211E21; /* Color de fondo principal del sitio */
+  color: #F1F1F1; /* Color del texto global */
+  min-height: 100vh; /* Altura mínima: toda la pantalla */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Tipografía base */
 }
 
-/* Ensure the page background is dark and remove default body margin which
-   could show a white strip under the footer. */
+/* Reseteo de estilos */
 html,
 body,
 #root {
-  background: #211E21;
-  margin: 0;
-  padding: 0;
+  background: #211E21; /* Igualar fondo para evitar cortes visuales */
+  margin: 0; /* Quitar márgenes predeterminados */
+  padding: 0; /* Quitar padding predeterminado */
 }
 
+/* Header */
 .site-header {
-  background: #211E21;
-  border-bottom: 1px solid rgba(241, 241, 241, 0.04);
-  position: sticky;
-  top: 0;
-  z-index: 40;
+  background: #211E21; /* Fondo oscuro */
+  border-bottom: 1px solid rgba(241, 241, 241, 0.04); /* Línea inferior */
+  position: sticky; /* Fijo al hacer scroll */
+  top: 0; /* Pegado arriba */
+  z-index: 40; /* Sobre el contenido */
 }
 
 .header-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 16px;
+  max-width: 1400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado */
+  display: flex; /* Layout flexible */
+  align-items: center; /* Alineación vertical */
+  justify-content: space-between; /* Separación */
+  padding: 12px 16px; /* Espaciado interno */
 }
 
 .brand {
-  font-weight: 900;
-  font-size: 28px;
-  letter-spacing: 2px;
+  font-weight: 900; /* Negrita */
+  font-size: 28px; /* Tamaño */
+  letter-spacing: 2px; /* Espaciado */
 }
 
+/* Navegación */
 .main-nav {
-  display: flex;
-  gap: 18px;
-  align-items: center;
+  display: flex; /* Layout flexible */
+  gap: 225px; /* Separación entre enlaces */
+  align-items: center; /* Centrado vertical */
 }
 
 .main-nav a {
-  color: #F1F1F1;
-  text-decoration: none;
-  font-size: 13px;
+  color: #F1F1F1; /* Color de texto */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 13px; /* Tamaño */
 }
 
 .menu-toggle {
-  display: none;
-  background: #F1F1F1;
-  color: #211E21;
-  border-radius: 6px;
-  padding: 6px 10px;
-  font-weight: 700;
+  display: none; /* Oculto en desktop */
+  background: #F1F1F1; /* Fondo claro */
+  color: #211E21; /* Texto oscuro */
+  border-radius: 6px; /* Redondeado */
+  padding: 6px 10px; /* Espaciado */
+  font-weight: 700; /* Negrita */
 }
 
+/* Contenido principal */
 .main-content {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 28px 16px 60px;
+  max-width: 1400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado */
+  padding: 0px 16px 160px; /* Padding con espacio para footer */
 }
 
 .hero-brand {
-  font-size: 120px;
-  margin: 10px 0;
-  font-weight: 900;
-  letter-spacing: -6px;
+  font-size: 305px; /* Tamaño gigante */
+  margin: 10px 0; /* Margen */
+  font-weight: 900; /* Negrita */
+  letter-spacing: -45px; /* Espaciado negativo */
 }
 
 .hero-sub {
-  font-size: 30px;
-  margin: 8px 0 30px;
-  line-height: 1.05
+  font-size: 30px; /* Tamaño */
+  margin: 8px 0 30px; /* Márgenes */
+  line-height: 1.05; /* Altura de línea */
 }
 
+/* Secciones */
 .section-title {
-  font-size: 20px;
-  margin-bottom: 18px;
-  font-weight: 700
+  font-size: 20px; /* Tamaño */
+  margin-bottom: 18px; /* Espacio inferior */
+  font-weight: 700; /* Negrita */
 }
 
+/* Proyectos */
 .projects-row {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap
+  display: flex; /* Layout flexible */
+  gap: 20px; /* Espacio entre tarjetas */
+  flex-wrap: wrap; /* Ajuste responsivo */
 }
 
 .project-card {
-  background: transparent;
-  color: #F1F1F1;
+  background: transparent; /* Fondo */
+  color: #F1F1F1; /* Texto */
 }
 
 .project-card .thumb {
-  width: 100%;
-  padding-top: 60%;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  background-color: #F1F1F1;
-  box-sizing: border-box;
-  border: 10px solid #F1F1F1;
+  width: 100%; /* Completo */
+  padding-top: 60%; /* Relación de aspecto */
+  background-size: cover; /* Imagen cubre */
+  background-position: center; /* Centrada */
+  display: block; /* Bloque */
+  box-sizing: border-box; /* Incluye borde */
 }
 
 .project-card .meta {
-  padding: 12px 0
+  padding: 12px 0; /* Espaciado */
 }
 
 .project-card h3 {
-  margin: 0;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 800
+  margin: 0; /* Sin margen */
+  font-size: 20px; /* Tamaño */
+  text-transform: uppercase; /* Mayúsculas */
+  font-weight: 800;
+  margin-top: 10px; /* Espacio arriba */
 }
 
 .project-card p {
-  margin: 6px 0 0;
-  color: #F1F1F1;
-  font-size: 13px
+  margin: 6px 0 0; /* Márgenes */
+  color: #F1F1F1; /* Texto */
+  font-size: 13px; /* Tamaño */
 }
-
+/* Botón ver todo */
 .see-all {
-  display: inline-block;
-  margin-top: 22px;
-  color: #F1F1F1;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(241, 241, 241, 0.06);
-  padding-bottom: 6px
+  display: inline-block; /* Mostrar como bloque en línea */
+  margin-top: 22px; /* Espacio arriba */
+  color: #F1F1F1; /* Color del texto */
+  text-decoration: none;  /* Sin subrayado */
+  border-bottom: 1px solid rgba(241, 241, 241, 0.06); /* Línea inferior sutil */
+  padding-bottom: 6px; /* Espaciado interno abajo */
 }
 
+/* Página de proyectos: título */
 .projects-page .page-title {
-  font-size: 72px;
-  font-weight: 900;
-  margin-bottom: 12px;
-  letter-spacing: -2px
+  font-size: 100px; /* Tamaño de fuente para el título de página */
+  font-weight: 900; /* Negrita para el título */
+  margin-bottom: 12px; /* Espacio debajo del título */
+  letter-spacing: -13px; /* Espaciado entre letras */
 }
 
-.projects-page .filters {
-  color: #F1F1F1;
-  margin-bottom: 22px;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px
+/* Filtros de la página de proyectos */
+.projects-page .filters {  
+  color: #F1F1F1; /* Color del texto de los filtros */
+  margin-bottom: 70px; /* Espacio debajo de los filtros */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 15px; /* Tamaño de fuente */
+  letter-spacing: 2px; /* Espaciado entre letras */
 }
 
+/* Cuadrícula de proyectos */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px
+  display: grid; /* Estructura de cuadrícula para los proyectos */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 30px; /* Espacio entre elementos */
 }
 
-/* Selected works styles */
+/* Cuadrícula de proyectos seleccionados */
 .selected-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-bottom: 26px
+  display: grid; /* Estructura de cuadrícula */ 
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */ 
+  gap: 28px; /* Espacio entre elementos */
+  margin-bottom: 26px; /* Espacio debajo de la cuadrícula */
 }
 
-.project-card.selected {
-  background: transparent
+/* Tarjetas seleccionadas */
+.project-card.selected { /* Tarjeta de proyecto seleccionada */
+  background: transparent; /* Fondo transparente */
 }
 
 .project-card.selected .thumb {
-  padding-top: 0;
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-  border: 8px solid #fff
+  padding-top: 0; /* Sin padding superior */
+  height: 220px;  /* Altura fija */
+  background-size: cover; /* Imagen cubre */
+  background-position: center; /* Centrada */
 }
 
 .project-card.selected .meta {
-  padding: 12px 0
+  padding: 12px 0; /* Espaciado de */
 }
 
 .project-card.selected h3 {
-  font-size: 14px;
-  margin-top: 10px
+  font-size: 20px; /* Tamaño */
+  margin-top: 10px; /* Espacio arriba */
 }
 
 .project-card.selected p {
-  font-size: 12px;
-  color: #F1F1F1;
+  font-size: 20px; /* Tamaño */
+  color: #F1F1F1;   /* Color del texto */
 }
 
-/* Featured Project styles (non-interactive) */
+/* Proyecto destacado */
 .featured-project {
-  background: transparent;
-  color: #F1F1F1;
-  cursor: default
+  background: transparent; /* Fondo transparente */
+  color: #F1F1F1; /* Color de texto */
+  cursor: default; /* Cursor normal */
 }
 
 .featured-thumb {
-  width: 100%;
-  height: 280px;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  background-color: #F1F1F1;
-  box-sizing: border-box;
-  border: 8px solid #F1F1F1;
+  width: 100%; /* Ancho completo */
+  height: 280px; /* Altura fija */
+  background-size: cover; /* Imagen cubre */
+  background-position: center; /* Centrada */
+  display: block; /* Bloque */
 }
 
 .featured-meta {
-  padding: 12px 0
+  padding: 12px 0; /* Espaciado vertical */
 }
 
 .featured-meta h3 {
-  margin: 0;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-top: 10px
+  margin: 0; /* Sin margen */
+  font-size: 20px; /* Tamaño */
+  text-transform: uppercase; /* Mayúsculas */
+  font-weight: 800; /* Negrita */
+  margin-top: 15px; /* Espacio arriba */
 }
 
 .featured-meta p {
-  margin: 6px 0 0;
-  color: #F1F1F1;
-  font-size: 12px
+  margin: 8px 0 0; /* Margen superior */
+  color: #F1F1F1; /* Texto claro */
+  font-size: 13px; /* Tamaño pequeño */
 }
 
-/* Keep regular grid consistent */
+/* Lista de proyectos */
 .projects-list {
-  margin-top: 6px
+  margin-top: 8px; /* Separación arriba */
 }
 
+/* Foto de perfil */
 .profile-photo {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  margin: 18px 0
+  width: 100%; /* Ancho completo */
+  max-height: 300px; /* Altura máxima */
+  object-fit: cover; /* Recorte proporcional */
+  margin: 18px 0; /* Margen vertical */
 }
 
+/* Título genérico */
 .page-title {
-  font-weight: 900
+  font-weight: 900; /* Negrita fuerte */
 }
 
+/* Footer */
 .site-footer {
-  background: #211E21;
-  padding: 0 16px 0;
-  position: relative;
-  overflow: visible
+  background: #211E21; /* Fondo oscuro */
+  padding: 0 16px 0; /* Padding horizontal */
+  padding-top: 200px; /* Espacio arriba */
+  position: relative; /* Para posicionar hijos */
+  overflow: hidden; /* Oculta overflow */
 }
 
+/* Contenedor interno del footer */
 .footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-  background: transparent
+  max-width: 1400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado */
+  height: 320px; /* Altura */
+  display: flex; /* Flexbox */
+  justify-content: center; /* Centrado */
+  align-items: flex-end; /* Abajo */
+  position: relative; /* Base para hijos */
+  background: transparent; /* Sin fondo */
 }
 
+/* Contenedor del logo */
 .brand-wrap {
-  position: relative;
-  display: inline-block
+  position: relative; /* Base */
+  display: inline-block; /* Ajustado al contenido */
+  overflow: visible; /* Permite sobresalir */
+  height: auto; /* Ajuste automático */
 }
 
+/* Marca del footer */
 .footer-brand {
-  font-size: 220px;
-  font-weight: 900;
-  letter-spacing: -6px;
-  opacity: 0.95;
-  line-height: 0.85;
-  margin: 0;
-  display: block;
-  background: transparent;
-  -webkit-font-smoothing: antialiased
+  font-size: 300px; /* Tamaño grande */
+  font-weight: 900; /* Extra bold */
+  letter-spacing: -45px; /* Letras juntas */
+  line-height: 0.70; /* Alto de línea */
+  min-height: normal; /* Altura mínima */
+  margin: 100; /* Margen */
+  transform: translateY(20%); /* Movimiento hacia abajo */
 }
 
 .brand {
-  font-weight: 900;
-  font-size: 28px;
-  letter-spacing: 2px;
-  color: #F1F1F1;
-  text-decoration: none;
-  cursor: pointer
+  font-weight: 900; /* Negrita */
+  font-size: 28px; /* Tamaño */
+  letter-spacing: 2px; /* Espaciado */
+  color: #F1F1F1; /* Texto claro */
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer; /* Cursor clickeable */
 }
 
 .links-right {
-  position: absolute;
-  right: 0px;
-  bottom: 180px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #F1F1F1;
-  white-space: nowrap;
-  z-index: 200
+  position: absolute; /* Posicionado */
+  right: 0px; /* A la derecha */
+  bottom: 190px; /* Altura desde abajo */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* En columna */
+  gap: 8px; /* Separación */
+  text-align: right; /* A la derecha */
+  text-transform: uppercase; /* Mayúsculas */
+  font-size: 15px; /* Tamaño */
+  color: #F1F1F1; /* Texto claro */
+  white-space: nowrap; /* Sin quiebres */
+  z-index: 200; /* Encima */
 }
-
-/* Stylized 'see all' button under projects */
+/* Botón "ver todo" */
 .see-all {
-  display: inline-block;
-  padding: 10px 18px;
-  border: 1px solid rgba(241, 241, 241, 0.12);
-  color: #F1F1F1;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  border-radius: 6px;
-  background: transparent;
-  transition: all 180ms ease
+  display: block; /* Permite centrar */
+  width: 380px; /* Ancho del botón */
+  margin: 40px auto 0; /* Centrado horizontal */
+  padding: 10px 0; /* Alto del botón */
+  border: 1px solid rgba(241, 241, 241, 0.12); /* Borde sutil */
+  color: #F1F1F1; /* Texto claro */
+  text-decoration: none; /* Sin subrayado */
+  text-transform: uppercase; /* Mayúsculas */
+  letter-spacing: 1.5px; /* Separación de letras */
+  font-weight: 700; /* Negrita */
+  border-radius: 6px; /* Bordes redondeados */
+  background: transparent; /* Fondo transparente */
+  text-align: center; /* Centra el texto dentro */
+  transition: all 180ms ease; /* Animación */
 }
 
 .see-all:hover {
-  background: rgba(255, 255, 255, 0.03);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5)
+  background: rgba(255, 255, 255, 0.03); /* Fondo hover */
+  transform: translateY(-3px); /* Levantado */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
-/* Project Detail Page */
+/* Página de detalle */
 .project-detail {
-  padding: 40px 16px
+  padding: 40px 16px; /* Espaciado */
 }
 
 .project-detail .inner {
-  max-width: 1100px;
-  margin: 0 auto
+  max-width: 1400px; /* Máximo ancho */
+  margin: 0 auto; /* Centrado */
 }
 
 .back-link {
-  display: inline-block;
-  margin-bottom: 30px;
-  color: #F1F1F1;
-  text-decoration: none;
-  font-size: 13px;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 8px;
-  transition: all 200ms ease
+  display: inline-block; /* Mantiene su ubicación */
+  margin-bottom: 30px; /* Espacio abajo */
+  padding: 8px 16px; /* Caja similar al botón ver todo */
+  border: 1px solid rgba(241, 241, 241, 0.12); /* Borde sutil */
+  border-radius: 6px; /* Bordes redondeados */
+  color: #F1F1F1; /* Texto claro */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 13px; /* Tamaño de letra */
+  text-transform: uppercase; /* Mayúsculas */
+  letter-spacing: 1.3px; /* Espaciado de letras */
+  transition: all 200ms ease; /* Animación */
 }
 
+/* Hover */
 .back-link:hover {
-  border-bottom-color: #F1F1F1;
+  background: rgba(255, 255, 255, 0.04); /* Fondo suave */
+  transform: translateY(-2px); /* Ligero levantamiento */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35); /* Sombra suave */
 }
 
 .detail-header {
-  margin-bottom: 40px
+  margin-bottom: 20px; /* Espacio inferior */
 }
 
 .detail-header h1 {
-  font-size: 72px;
+  font-size: 100px;
   font-weight: 900;
-  margin: 0 0 12px;
-  letter-spacing: -2px
+  margin: 0 0 -10px; /* Más cerca del subtitulo */
+  letter-spacing: -7.5px;
 }
 
 .detail-header .subtitle {
-  font-size: 18px;
+  font-size: 20px;
   color: #F1F1F1;
-  margin: 0
+  margin: 0; /*  Sin margen  */
 }
 
 .detail-content {
-  margin-top: 30px
+  margin-top: 30px; /* Separación superior */
 }
 
 .detail-content .description {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #F1F1F1;
-  max-width: 800px;
-  margin-bottom: 40px
+  font-size: 15px; /* Tamaño */
+  line-height: 1.6; /* Interlineado */ 
+  color: #F1F1F1; /* Texto claro */
+  max-width: 700px; /* Ancho máximo */
+  margin-bottom: 50px; /* Margen abajo */
 }
 
 .detail-main-image {
-  width: 100%;
-  margin-bottom: 40px;
-  overflow: hidden;
-  background: #211E21
+  width: 100vw; /* Asegura ancho exacto del viewport */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin padding */
+  overflow: hidden; /* Oculta excedente */
+  background: #211E21; /* Base para imagen */
+  position: relative;/* Previene herencia extraña */
+  left: 50%; /* Mueve al centro */
+  right: 50%; /* Mueve al centro */
+  margin-left: -50vw; /* Eliminar contenedores con max-width */
+  margin-right: -50vw; /* Eliminar contenedores con max-width */
 }
 
 .detail-main-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  max-height: 600px
+  width: 100%; /* Ancho completo */
+  height: auto; /* Altura proporcional */
+  display: block; /* Bloque */
+  object-fit: contain; /* Ajuste interno */
+  max-height: 1600px; /* Altura máxima */
+  max-width: 2000px; /* Ancho máximo */
 }
 
 .detail-images-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-top: 40px
+  display: grid; /* Activa el sistema de grilla */
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  column-gap: 25px; /* Espacio entre columnas (al medio) */
+  row-gap: 40px; /* Espacio entre filas */
+  width: 100vw; /* Grilla ocupa todo el ancho de la pantalla */
+  margin-left: 50%; /* Mueve la grilla hacia la mitad */
+  transform: translateX(-50%); /* La centra exactamente */
+}
+
+/* Margen superior en ambas imágenes de la primera fila */
+.detail-image-item:nth-child(-n + 2) {
+  margin-top: 50px; /* Margen superior para las dos primeras imágenes */
 }
 
 .detail-image-item {
-  width: 100%;
-  background: #1a1a1a;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100%;
-  position: relative
+  width: 100%; /* Ocupa todo el ancho de su celda */
+  height: 420px; /* Alto fijo para que se vea horizontal */
+  background: #1a1a1a; /* Fondo oscuro */
+  overflow: hidden; /* Oculta cualquier exceso de imagen */
+  position: relative; /* Necesario para posicionar la imagen dentro */
 }
 
 .detail-image-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 10px;
-  box-sizing: border-box
+  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  height: 100%; /* Imagen ocupa todo el alto del contenedor */
+  object-fit: cover; /* Cubre todo el espacio sin bordes vacíos */
+  display: block; /* Elimina espacios fantasmas debajo de la imagen */
 }
 
-/* Responsive */
+/* Responsive general */
 @media (max-width: 900px) {
   .hero-brand {
-    font-size: 72px
+    font-size: 72px; /* Tamaño menor */
   }
 
   .project-card {
-    width: 48%
+    width: 48%; /* Dos por fila */
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
   }
 
   .detail-header h1 {
-    font-size: 48px
+    font-size: 48px; /* Título menor */
   }
 
   .detail-images-grid {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr; /* Una columna */
   }
 }
 
+/* Responsive móvil */
 @media (max-width: 640px) {
   .menu-toggle {
-    display: inline-block
+    display: inline-block; /* Mostrar menú */
   }
 
   .main-nav {
-    display: none
+    display: none; /* Ocultar menú */
   }
 
   .main-nav.open {
-    display: flex;
-    position: fixed;
-    left: 0;
-    top: 56px;
-    bottom: 0;
-    width: 80%;
-    background: #211E21;
-    flex-direction: column;
-    padding: 20px
+    display: flex; /* Menú abierto */
+    position: fixed; /* Fijo */
+    left: 0; /* Izquierda */
+    top: 56px; /* Debajo del header */
+    bottom: 0; /* Hasta abajo */
+    width: 80%; /* Ancho */
+    background: #211E21; /* Fondo */
+    flex-direction: column; /* Vertical */
+    padding: 20px; /* Espacio */
   }
 
   .hero-brand {
-    font-size: 48px
+    font-size: 48px; /* Más pequeño */
   }
 
   .project-card {
-    width: 100%
+    width: 100%; /* Una por fila */
   }
 
   .projects-grid {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr; /* Columna única */
   }
 
   .detail-header h1 {
-    font-size: 36px
+    font-size: 36px; /* Más pequeño */
   }
 
-  /* Contact page styles */
+  /* Página de contacto */
   .contact-page {
-    padding: 40px 16px
+    padding: 40px 16px; /* Espaciado */
   }
 
   .contact-page .inner {
-    max-width: 1100px;
-    margin: 0 auto
+    max-width: 1400px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
   }
 
   .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 20px;
-    align-items: start
+    display: grid; /* Grid */
+    grid-template-columns: 1fr 260px; /* Dos columnas */
+    gap: 20px; /* Separación */
+    align-items: start; /* Arriba */
   }
 
   .contact-title {
-    font-size: 86px;
-    font-weight: 900;
-    margin: 0 0 12px;
-    letter-spacing: -3px
+    font-size: 86px; /* Título grande */
+    font-weight: 900; /* Negrita */
+    margin: 0 0 12px; /* Margen */
+    letter-spacing: -3px; /* Letras juntas */
   }
 
   .contact-lead {
-    color: #F1F1F1;
-    max-width: 520px;
-    font-size: 16px;
-    line-height: 1.6
+    color: #F1F1F1; /* Texto claro */
+    max-width: 520px; /* Ancho */
+    font-size: 16px; /* Tamaño */
+    line-height: 1.6; /* Interlineado */
   }
 
   .contact-right {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end
+    display: flex; /* Flexbox */
+    align-items: flex-end; /* Abajo */
+    justify-content: flex-end; /* Derecha */
   }
 
   .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: right
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Vertical */
+    gap: 8px; /* Espacio */
+    text-transform: uppercase; /* Mayúsculas */
+    font-weight: 700; /* Negrita */
+    text-align: right; /* Alineación */
   }
 
   .contact-links div {
-    color: #F1F1F1;
-    font-size: 14px
+    color: #F1F1F1; /* Texto */
+    font-size: 14px; /* Tamaño */
   }
 
   @media (max-width: 900px) {
     .contact-grid {
-      grid-template-columns: 1fr
+      grid-template-columns: 1fr; /* Una columna */
     }
 
     .contact-right {
-      justify-content: flex-start;
-      align-items: flex-start
+      justify-content: flex-start; /* Izquierda */
+      align-items: flex-start; /* Arriba */
     }
 
     .contact-links {
-      text-align: left
+      text-align: left; /* Alinear izquierda */
     }
 
     .contact-title {
-      font-size: 56px
+      font-size: 56px; /* Menor */
     }
   }
 }
 
-/* Profile page styles */
+/* Sección perfil */
 .profile-hero {
-  margin-bottom: 24px
+  margin-bottom: 24px; /* Espacio abajo */
 }
 
-.hero-name {
-  font-size: 86px;
-  font-weight: 900;
-  margin: 0 0 12px;
-  letter-spacing: -3px
+.hero-name { /* nombre */
+  font-size: 100px; /* tamaño grande */
+  font-weight: 900; /* muy gruesa */
+  margin: 30 0 40px; /* margen inferior */
+  letter-spacing: -5px; /* letras juntas */
 }
 
-.profile-lead {
-  font-size: 16px;
-  color:  #F1F1F1;
-  max-width: 760px;
-  line-height: 1.6
+.profile-lead { /* texto descriptivo */
+  font-size: 20px; /* tamaño base */
+  color:  #F1F1F1; /* color claro */
+  max-width: 700px; /* ancho máx */
+  line-height: 1.6 /* interlineado */
 }
 
-.profile-photo-wrap {
-  margin: 40px 0
+
+
+
+
+
+
+
+
+.profile-right .section-title { /* título derecha */
+  font-size: 44px; /* grande */
+  letter-spacing: -2px; /* juntas */
+  margin: 0 0 18px; /* margen inf */
+  text-align: right /* derecha */
 }
 
-.profile-photo {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 2px
+.profile-right .services { /* lista servicios */
+  list-style: none; /* sin viñetas */
+  padding: 0; /* sin padding */
+  margin: 0; /* sin margen */
+  color: #F1F1F1; /* claro */
+  display: flex; /* flex */
+  flex-direction: column; /* vertical */
+  gap: 8px; /* espacio */
+  text-transform: uppercase; /* mayúsculas */
+  font-weight: 700; /* gruesa */
+  align-items: flex-end; /* derecha */
+  text-align: right /* derecha */
 }
 
-.profile-grid {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 40px;
-  align-items: start;
-  margin-top: 20px
+.profile-right .services li { /* item servicio */
+  font-size: 13px; /* pequeño */
+  color: #F1F1F1; /* claro */
 }
 
-.profile-right .section-title {
-  font-size: 44px;
-  letter-spacing: -2px;
-  margin: 0 0 18px;
-  text-align: right
+.profile-contact-grid { /* grilla contacto */
+  display: grid; /* grid */
+  grid-template-columns: 1fr; /* una col */
+  gap: 20px; /* espacio */
+  align-items: start; /* arriba */
+  margin-top: 60px /* margen sup */
 }
 
-.profile-right .services {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #F1F1F1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-transform: uppercase;
-  font-weight: 700;
-  align-items: flex-end;
-  text-align: right
+.contact-left .section-title { /* título contacto */
+  font-size: 44px; /* grande */
+  margin: 0 0 12px /* margen inf */
 }
 
-.profile-right .services li {
-  font-size: 13px;
-  color: #F1F1F1;
+.contact-lead { /* texto contacto */
+  color: #F1F1F1; /* claro */
+  max-width: 520px /* ancho máx */
 }
 
-.profile-contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  align-items: start;
-  margin-top: 60px
+@media (max-width: 900px) { /* ajustes tablet */
+  .hero-name { font-size: 56px } /* más pequeño */
+
+  .profile-grid { grid-template-columns: 1fr; } /* una col */
+
+  .profile-right { order: 2 } /* abajo */
+  .profile-left { order: 1 } /* arriba */
+
+  .profile-contact-grid { grid-template-columns: 1fr } /* una col */
+
+  .contact-right { text-align: left } /* izquierda */
 }
 
-.contact-left .section-title {
-  font-size: 44px;
-  margin: 0 0 12px
+@media (max-width: 900px) { /* footer tablet */
+  .footer-brand { font-size: 160px; letter-spacing: -22px; } /* marca menor */
+  .footer-inner { min-height: 2200px; } /* más alto */
+  .main-content { padding-bottom: 160px; } /* espacio inf */
+  .links-right { bottom: 140px; } /* subir links */
 }
 
-.contact-lead {
-  color: #F1F1F1;
-  max-width: 520px
-}
-
-@media (max-width: 900px) {
-  .hero-name {
-    font-size: 56px
-  }
-
-  .profile-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-right {
-    order: 2
-  }
-
-  .profile-left {
-    order: 1
-  }
-
-  .profile-contact-grid {
-    grid-template-columns: 1fr
-  }
-
-  .contact-right {
-    text-align: left
-  }
+@media (max-width: 640px) { /* ajustes móvil */
+  .footer-brand { font-size: 120px; letter-spacing: -140px; } /* marca compacta */
+  .footer-inner { min-height: 150px; } /* footer chico */
+  .main-content { padding-bottom: 120px; } /* espacio inf */
+  .links-right { bottom: 110px; } /* ajustar pos */
 }

@@ -9,8 +9,6 @@ const projectData = {
     description: 'Lafken surge inspirado en las leyendas de Chiloé y busca transportar a los consumidores a la magia de la isla. Cada detalle, desde la botella hasta sus cajas, conecta con su rica cultura. Más que una bebida, Lafken lleva un pedacito de Chiloé a cada mesa.',
     images: [
       '/Imagenes/lafken/LAFKEN%201.1.png',
-      '/Imagenes/lafken/LAFKEN%201.png',
-      '/Imagenes/lafken/LAFKEN%202.png',
       '/Imagenes/lafken/LAFKEN%203.png',
       '/Imagenes/lafken/LAFKEN%204.png'
     ]
@@ -34,8 +32,7 @@ const projectData = {
     images: [
       '/Imagenes/mindly/Mindly%201.png',
       '/Imagenes/mindly/Mindly%202.png',
-      '/Imagenes/mindly/Mindly%203.png',
-      '/Imagenes/mindly/Mindly%204.png'
+      '/Imagenes/mindly/Mindly%203.png'
     ]
   },
   4: {
