@@ -589,7 +589,7 @@ body,
 }
 
 .profile-lead { /* texto descriptivo */
-  font-size: 20px; /* tamaño base */
+  font-size: 25px; /* tamaño base */
   color:  #F1F1F1; /* color claro */
   max-width: 700px; /* ancho máx */
   line-height: 1.6 /* interlineado */
@@ -618,7 +618,7 @@ body,
 }
 
 .profile-right .services li { /* item servicio */
-  font-size: 20px; /* pequeño */
+  font-size: 25px; /* pequeño */
   color: #F1F1F1; /* claro */
 }
 
@@ -639,18 +639,19 @@ body,
 
 .contact-lead { /* texto contacto */
   color: #F1F1F1; /* claro */
-  max-width: 520px /* ancho máx */
+  max-width: 520px; /* ancho máx */
+  font-size: 25px; /* tamaño */
 }
 
 @media (max-width: 900px) { /* ajustes tablet */
   .hero-name { font-size: 56px } /* más pequeño */
 
-  .profile-grid { grid-template-columns: 1fr; } /* una col */
+  .profile-grid { grid-template-columns: 1fr; }
 
   .profile-right { order: 2 } /* abajo */
   .profile-left { order: 1 } /* arriba */
 
-  .profile-contact-grid { grid-template-columns: 1fr } /* una col */
+  .profile-contact-grid { grid-template-columns: 1fr } 
 
   .contact-right { text-align: left } /* izquierda */
 }
