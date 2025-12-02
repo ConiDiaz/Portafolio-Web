@@ -32,8 +32,8 @@ export default function Profile() {
 
         <div className="profile-contact-grid">
           <div className="contact-left">
-            <h2 className="section-title">CONTACTO</h2>
-            <p className="contact-lead">Si quieres colaborar o tienes un proyecto en mente, puedes escribirme.</p>
+            <h2 className="section-title">CREACIÓN</h2>
+            <p className="contact-lead">Transformamos ideas en experiencias visuales únicas, donde cada detalle refleja creatividad, intención y la esencia de tu proyecto</p>
           </div>
         </div>
       </div>

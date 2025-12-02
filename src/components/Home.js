@@ -13,7 +13,8 @@ export default function Home() {
     <section className="home-hero">
       <div className="hero-inner">
         <h1 className="hero-brand">SHAFORM</h1>
-        <p className="hero-sub">LO INVISIBLE HECHO FORMA</p>
+        <p className="hero-sub">LO INVISIBLE</p>
+        <p className="hero-sub">HECHO FORMA</p>
         <h2 className="section-title">TRABAJOS SELECCIONADOS</h2>
         <div className="selected-grid">
           {featured.map((p, idx) => (

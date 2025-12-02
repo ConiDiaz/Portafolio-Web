@@ -34,7 +34,9 @@ html, body, #root {
 .brand {
   font-weight: 900; /* Negrita */
   font-size: 28px; /* Tamaño */
-  letter-spacing: -2px; /* Espaciado */
+  letter-spacing: -5px; /* Espaciado */
+  color: #F1F1F1; /* Color */
+  text-decoration: none; /* Sin subrayado */
 }
 
 /* Navegación */
@@ -48,6 +50,25 @@ html, body, #root {
   color: #F1F1F1; /* Color de texto */
   text-decoration: none; /* Sin subrayado */
   font-size: 13px; /* Tamaño */
+  font-weight: 400; /* Peso normal */
+  transition: font-weight 0.2s; /* Transición suave */
+}
+
+.main-nav a.active {
+  font-weight: 900; /* Negrita cuando está activo */
+}
+
+.main-nav a:hover {
+  font-weight: 700; /* Semi-negrita al pasar el mouse */
+}
+
+.menu-toggle {
+  display: none; /* Oculto en desktop */
+  background: #F1F1F1; /* Fondo claro */
+  color: #211E21; /* Texto oscuro */
+  border-radius: 6px; /* Redondeado */
+  padding: 6px 10px; /* Espaciado */
+  font-weight: 700; /* Negrita */
 }
 
 .menu-toggle {
@@ -63,7 +84,7 @@ html, body, #root {
 .main-content {
   max-width: 1400px; /* Ancho máximo */
   margin: 0 auto; /* Centrado */
-  padding: 0px 16px 160px; /* Padding con espacio para footer */
+  padding: 0 16px 160px; /* Padding con espacio para footer */
 }
 
 .hero-brand {
@@ -74,19 +95,58 @@ html, body, #root {
 }
 
 .hero-sub {
-  font-size: 30px; /* Tamaño */
-  margin: 8px 0 30px; /* Márgenes */
-  line-height: 1.05; /* Altura de línea */
+  font-size: 100px; /* Tamaño */
+  margin: 0; /* Sin márgenes individuales */
+  line-height: 1.05; /* Interlineado ajustado */
 }
 
 /* Secciones */
 .section-title {
-  font-size: 20px; /* Tamaño */
+  font-size: 25px; /* Tamaño */
   margin-bottom: 18px; /* Espacio inferior */
   font-weight: 700; /* Negrita */
 }
 
-/* Proyectos */
+/* Proyectos destacados (TRABAJOS SELECCIONADOS) */
+.selected-grid {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas cuadradas */
+  gap: 20px; /* Espacio entre tarjetas */
+  margin-top: 40px; /* Espacio superior */
+}
+
+.featured-project {
+  background: transparent; /* Fondo */
+  color: #F1F1F1; /* Texto */
+}
+
+.featured-thumb {
+  width: 100%; /* Completo */
+  padding-top: 100%; /* Relación de aspecto CUADRADA */
+  background-size: cover; /* Imagen cubre */
+  background-position: center; /* Centrada */
+  display: block; /* Bloque */
+  box-sizing: border-box; /* Incluye borde */
+}
+
+.featured-meta {
+  padding: 12px 0; /* Espaciado */
+}
+
+.featured-project h3 {
+  margin: 10px 0 0; /* Espacio arriba */
+  font-size: 20px; /* Tamaño */
+  text-transform: uppercase; /* Mayúsculas */
+  font-weight: 800; /* Negrita */
+}
+
+.featured-project p {
+  margin: 6px 0 0; /* Márgenes */
+  color: #F1F1F1; /* Texto */
+  font-size: 13px; /* Tamaño */
+}
+
+/* Proyectos de página de proyectos (NO TOCAR) */
 .projects-row {
   display: flex; /* Layout flexible */
   gap: 20px; /* Espacio entre tarjetas */
@@ -100,7 +160,7 @@ html, body, #root {
 
 .project-card .thumb {
   width: 100%; /* Completo */
-  padding-top: 60%; /* Relación de aspecto */
+  padding-top: 100%; /* Relación de aspecto cuadrada */
   background-size: cover; /* Imagen cubre */
   background-position: center; /* Centrada */
   display: block; /* Bloque */
@@ -124,6 +184,7 @@ html, body, #root {
   color: #F1F1F1; /* Texto */
   font-size: 13px; /* Tamaño */
 }
+
 /* Botón ver todo */
 .see-all {
   display: inline-block; /* Mostrar como bloque en línea */
@@ -681,4 +742,104 @@ html, body, #root {
   .footer-inner { min-height: 150px; } /* footer chico */
   .main-content { padding-bottom: 120px; } /* espacio inf */
   .links-right { bottom: 110px; } /* ajustar pos */
+}
+
+/* Sección contacto */
+.contact-page {
+  padding: 60px 0; /* espacio vertical */
+}
+
+.contact-grid {
+  display: grid; /* grid */
+  grid-template-columns: 1fr; /* una columna */
+  gap: 20px; /* espacio */
+}
+
+.contact-left .contact-title {
+  font-size: 100px; /* grande */
+  font-weight: 900; /* muy gruesa */
+  letter-spacing: -13px; /* juntas */
+  margin: 0 0 10px; /* margen inferior reducido */
+}
+
+.contact-lead {
+  font-size: 25px; /* tamaño */
+  color: #F1F1F1; /* claro */
+  max-width: 520px; /* ancho máx */
+  margin: 0 0 30px; /* margen inferior */
+  line-height: 1.6; /* interlineado */
+}
+
+.contact-right {
+  display: flex; /* flex */
+  flex-direction: column; /* vertical */
+  gap: 15px; /* espacio entre links */
+}
+
+.contact-links {
+  display: flex; /* flex */
+  flex-direction: column; /* vertical */
+  gap: 12px; /* espacio */
+}
+
+.contact-links a,
+.contact-links div {
+  font-size: 25px; /* tamaño */
+  color: #F1F1F1; /* claro */
+  text-transform: uppercase; /* mayúsculas */
+  font-weight: 550; /* gruesa */
+  cursor: pointer; /* cursor pointer */
+  transition: opacity 0.3s; /* transición */
+  text-decoration: none; /* sin subrayado */
+}
+
+.contact-links a:hover,
+.contact-links div:hover {
+  opacity: 0.7; /* efecto hover */
+}
+
+@media (max-width: 900px) {
+  .contact-left .contact-title {
+    font-size: 56px; /* más pequeño */
+    letter-spacing: -5px; /* ajuste */
+  }
+
+  .contact-lead {
+    font-size: 20px; /* reducir */
+    max-width: 100%; /* ancho completo */
+  }
+
+  .contact-links a,
+  .contact-links div {
+    font-size: 20px; /* links menores */
+  }
+
+  .contact-grid {
+    gap: 15px; /* menos espacio */
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-page {
+    padding: 40px 0; /* menos padding */
+  }
+
+  .contact-left .contact-title {
+    font-size: 40px; /* marca compacta */
+    letter-spacing: -3px; /* ajuste */
+  }
+
+  .contact-lead {
+    font-size: 16px; /* texto chico */
+    margin: 0 0 20px; /* menos margen */
+  }
+
+  .contact-links a,
+  .contact-links div {
+    font-size: 16px; /* links chicos */
+  }
+
+  .contact-grid {
+    gap: 10px; /* espacio mínimo */
+  }
 }

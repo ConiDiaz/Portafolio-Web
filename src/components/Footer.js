@@ -8,9 +8,9 @@ export default function Footer() {
           <div className="footer-brand">SHAFORM</div>
         </div>
         <div className="links-right">
-          <div>EMAIL</div>
-          <div>INSTAGRAM</div>
-          <div>BEHANCE</div>
+          <div>TRANSFORMACIÓN</div>
+          <div>MATERIALIZACIÓN</div>
+          <div>INNOVACIÓN</div>
         </div>
       </div>
     </footer>
