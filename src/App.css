@@ -75,7 +75,7 @@ body {
 
 /* Filtros de proyectos */
 .filters span {
-  transition: color 0.3s ease, font-weight 0.2s, text-shadow 0.3s ease;
+  transition: color 0.3s ease, font-weight 0.2s, text-shadow 0.3s ease; 
   cursor: pointer;
 }
 
@@ -214,7 +214,7 @@ body {
   font-weight: 700; /* Negrita */
 }
 
-/* Proyectos destacados (TRABAJOS SELECCIONADOS) */
+/* Proyectos destacados */
 .selected-grid {
   display: grid; /* Grid layout */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas cuadradas */
@@ -253,7 +253,7 @@ body {
   font-size: 13px; /* Tamaño */
 }
 
-/* Proyectos de página de proyectos (NO TOCAR) */
+/* Proyectos de página de proyectos  */
 .projects-row {
   display: flex; /* Layout flexible */
   gap: 20px; /* Espacio entre tarjetas */
