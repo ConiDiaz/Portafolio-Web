@@ -7,9 +7,7 @@
 }
 
 /* Reseteo de estilos */
-html,
-body,
-#root {
+html, body, #root {
   background: #211E21; /* Igualar fondo para evitar cortes visuales */
   margin: 0; /* Quitar márgenes predeterminados */
   padding: 0; /* Quitar padding predeterminado */
@@ -36,7 +34,7 @@ body,
 .brand {
   font-weight: 900; /* Negrita */
   font-size: 28px; /* Tamaño */
-  letter-spacing: 2px; /* Espaciado */
+  letter-spacing: -2px; /* Espaciado */
 }
 
 /* Navegación */
@@ -583,22 +581,37 @@ body,
 
 .hero-name { /* nombre */
   font-size: 100px; /* tamaño grande */
-  font-weight: 900; /* muy gruesa */
-  margin: 30 0 40px; /* margen inferior */
+  font-weight: 900; /* muy gruesa la tipo*/
+  margin: 30px 0 40px; /* margen inferior */
   letter-spacing: -5px; /* letras juntas */
 }
 
 .profile-lead { /* texto descriptivo */
   font-size: 25px; /* tamaño base */
-  color:  #F1F1F1; /* color claro */
+  color: #F1F1F1; /* color claro */
   max-width: 700px; /* ancho máx */
-  line-height: 1.6 /* interlineado */
+  line-height: 1.6; /* interlineado */
+}
+
+.profile-photo-wrap {
+  width: 100vw; /* ancho completo */
+  margin-left: calc(-50vw + 50%); /* elimina márgenes laterales */
+  margin-bottom: 50px; /* espacio abajo */
+  overflow: hidden; /* oculta desbordamiento */
+}
+
+.profile-photo {
+  width: 100%; /* ancho completo del contenedor */
+  height: 2500px; /* altura larga vertical */
+  object-fit: cover; /* ajuste */
+  object-position: center; /* centrar imagen */
+  display: block; /* importante para márgenes */
 }
 
 .profile-right .section-title { /* título derecha */
   font-size: 100px; /* grande */
   letter-spacing: -13px; /* juntas */
-  margin: 0 0 18px; /* margen inf */
+  margin: 100px 0 18px; /* margen inf */
   text-align: right; /* derecha */
   font-weight: 900; /* gruesa tipo */
 }
@@ -614,7 +627,7 @@ body,
   text-transform: uppercase; /* mayúsculas */
   font-weight: 550; /* gruesa tipo */
   align-items: flex-end; /* derecha */
-  text-align: right /* derecha */
+  text-align: right; /* derecha */
 }
 
 .profile-right .services li { /* item servicio */
@@ -624,10 +637,10 @@ body,
 
 .profile-contact-grid { /* grilla contacto */
   display: grid; /* grid */
-  grid-template-columns: 1fr; /* una col */
+  grid-template-columns: 1fr; 
   gap: 20px; /* espacio */
   align-items: start; /* arriba */
-  margin-top: 60px /* margen sup */
+  margin-top: 60px; /* margen sup */
 }
 
 .contact-left .section-title { /* título contacto */
